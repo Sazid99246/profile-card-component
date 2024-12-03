@@ -4,3 +4,91 @@
     box-sizing: border-box;
     font-family: "Kumbh Sans", sans-serif;
 }
+
+body {
+    background-color: hsl(185, 75%, 39%);
+}
+
+body,
+.image-container {
+    flex-direction: column;
+    justify-content: center;
+}
+
+img {
+    border-radius: 50%;
+}
+
+main {
+    width: 350px;
+    height: 380px;
+    background-color: white;
+    background-image: url(../images/bg-pattern-card.svg);
+    background-repeat: repeat-x;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+body,
+.image-container {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.image-container {
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.country-name {
+    margin-bottom: 20px;
+}
+
+.divider {
+    border: 1px solid hsl(0, 0%, 59%);
+    width: 100%;
+}
+
+h3,
+p {
+    text-align: center;
+}
+
+span {
+    font-weight: 400;
+}
+
+p,
+span {
+    color: hsl(227, 10%, 46%);
+}
+
+.stats-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 20px;
+}
+
+
+@media screen and (min-width: 375px) {
+    main {
+        width: 320px;
+    }
+}
